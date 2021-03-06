@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "bebas";
+  src: url(../fonts/Bebas.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "sans";
+  src: url(../fonts/OpenSans-Regular.woff2) format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.hero {
+  background-image: url(../img/bg\ image\ 1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero_content {
+  letter-spacing: 0.1em;
+  font-family: bebas;
+  height: 140vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero_content h1 {
+  font-weight: 300;
+  font-size: 100px;
+  color: white;
+}
+.hero_content h2 {
+  font-weight: 300;
+  font-size: 30px;
+  padding-top: 10px;
+  color: white;
+}
+.button {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  font-size: 17px;
+  padding: 15px 40px 15px 40px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 35px;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, #f3af34 90.4%);
+  color: black;
+  font-weight: 300;
+  transition: 0.2s;
+}
+.button__line {
+  position: absolute;
+  display: block;
+}
+.button__line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, black);
+}
+.button:hover .button__line--top {
+  left: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.button__line--bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, black);
+}
+.button:hover .button__line--bottom {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.button__line--left {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, black);
+}
+.button:hover .button__line--left {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0s;
+}
+.button__line--right {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, black);
+}
+.button:hover .button__line--right {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0s;
+}
+.button:hover {
+  box-shadow: 0 0 10px #ffb548, 0 0 40px #ffb548, 0 0 80px #ffb548,
+    0 0 160px #ffb548;
+  background-color: #ffb548;
+  transition-delay: 1s;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+.logo_platform {
+  margin-top: 30px;
+}
+.xbox {
+  padding-right: 20px;
+}
+.nav_links {
+  font-family: "sans";
+  margin: 30px;
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.nav_light {
+  transition: 0.5s;
+}
+.nav_light:hover {
+  color: #ffb548;
+  font-size: 19px;
+  transition: 0.5s;
+}
+.logo {
+  margin-top: 10px;
+}
+.nav_links a {
+  text-decoration: none;
+  color: white;
+}
+.idol {
+  background-image: url(../img/bg\ image\ 2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.idol_content {
+  display: flex;
+  justify-content: space-around;
+}
+.idol_content_left {
+  letter-spacing: 0.1em;
+  font-family: "bebas";
+  height: 800px;
+  width: 400px;
+  height: 140vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.idol_content_left h2 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+}
+.idol_content_left h3 {
+  font-weight: 300;
+  font-size: 24px;
+}
+.idol_content_left p {
+  font-weight: 60;
+  font-family: "sans";
+  font-size: 18px;
+}
+.line2 {
+  height: 2px;
+  width: 500px;
+  background-color: white;
+  margin-bottom: 30px;
+}
+.idol_content_right {
+  display: flex;
+  align-items: center;
+}
+.idol_content_right img {
+  border-radius: 5px;
+}
+.features {
+  background-image: url("../img/Group.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.features_content {
+  font-family: bebas;
+  height: 110vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+.features_content_right {
+  width: 350px;
+  margin-right: 170px;
+}
+.features_content_right h3 {
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.features_content_right h2 {
+  font-size: 55px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.features_content_right h4 {
+  letter-spacing: 2px;
+  font-size: 27px;
+  color: #f3af34;
+  font-weight: 400;
+}
+.features_content_right p {
+  font-family: sans;
+  font-size: 13px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.features_content_right h5 {
+  letter-spacing: 2px;
+  font-size: 27px;
+  color: #f3af34;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.system_req{
+  background-image: url('../img/Group\ 2\ \(1\).png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.system_req_info{
+  height: 130vh;
+}
+.system_head{
+  font-family: bebas;
+  display: flex;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  
+}
+.system_head h3{
+ font-size: 28px;
+ font-weight: 300;
+ letter-spacing: 3px;
+ margin-top: 100px;
+}
+.system_head h2{
+  font-size: 65px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+.system_content{
+  margin: 100px 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 500px;
+  height: 400px;
+  border: 1px solid #979797;
+  flex-wrap: wrap;
+}
+.system_item{
+  width: 50%;
+}
+.system_item h3{
+  letter-spacing: 1px;
+  font-family: bebas;
+  font-weight:300;
+  color:  #FFB548;
+}
+.system_item p{
+  font-family: sans;
+}
+.graphic h3{
+  letter-spacing: 1px;
+  font-weight:300;
+  font-family: bebas;
+  color: #FFB548;
+}
+.graphic p{
+  font-family: sans;
+}
+.quotes{
+  background-image: url(../img/bg\ image\ 5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quotes_content{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
